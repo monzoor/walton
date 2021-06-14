@@ -1,2 +1,34 @@
-$body-bg: black;
-$body-color: white;
+$primary: #FEDC19;
+
+$secondary: #444444;
+
+$dark: #051D42;
+
+$orange: #E23E1C;
+
+$green: #2E9909;
+
+$gray-100: #F4F4F4; // top header, search bar
+
+// #FAFAFA // top side nav, top banner
+
+// #F3F3F3 // 6 col banner
+// #E9E9E9 // 6 col banner
+
+// #F8F8F8 // product bg, full width banner bg
+
+
+
+// #545454
+
+// base 
+$body-color: #252525;
+
+// typography
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+// buttons
+$input-btn-focus-width:         0 !default;
+
+// navbar 
+$navbar-light-color: $gray-100 !default;
