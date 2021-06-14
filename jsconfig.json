@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components": ["Components/index.js"],
+      "@components/*": ["Components/*"],
+      "@assets/*": ["assets/*"],
+      "@actions": ["actions/index.js"],
+      "@actions/*": ["actions/*"],
+      "@utils": ["utils/index.js"],
+      "@utils/*": ["utils/*"],
+      "@validations": ["validations/index.js"],
+      "@validations/*": ["validations/*"],
+      "@helpers": ["helpers/index.js"],
+      "@helpers/*": ["helpers/*"],
+      "@constants": ["constants/index.js"],
+      "@constants/*": ["constants/*"],
+      "@containers": ["Containers/index.js"],
+      "@containers/*": ["Containers/*"]
+    }
+  }
+}
