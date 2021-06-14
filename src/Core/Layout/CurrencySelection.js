@@ -23,7 +23,7 @@ const CurrencySelection = () => {
         mainKey="name"
         contents={(content) => <Content contentItem={content} />}
         label="Currency:"
-        className="ps-1"
+        className="ps-1 py-0"
       />
     </div>
   );

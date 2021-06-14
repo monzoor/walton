@@ -16,6 +16,10 @@ const BaseLayout = ({ children }) => {
             <CurrencySelection />
           </li>
         </ul>
+        <div className="ps-5 text-muted border-start border-2">
+          <span>Call us toll free: </span>
+          <span className="fw-bold">+1888 234 5678 </span>
+        </div>
       </TopNav>
       <Routes />
     </>

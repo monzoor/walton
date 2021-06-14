@@ -23,7 +23,7 @@ const LanguageSelection = () => {
       content={languageSelection}
       mainKey="lang"
       contents={(content) => <Content contentItem={content} />}
-      className="ps-0"
+      className="ps-0 py-0"
     />
   );
 };
