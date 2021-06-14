@@ -1,9 +1,9 @@
 const TopNav = ({ children }) => {
   return (
     <nav className="navbar navbar-light bg-light">
-      <div className="container">
+      <div className="container justify-content-start">
         {children}
-        asdfsdf
+        {/* asdfsdf */}
         {/* <a className="navbar-brand" href="#">
           <img
             src="/docs/5.0/assets/brand/bootstrap-logo.svg"

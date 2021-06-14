@@ -1,8 +1,16 @@
 import { useState, useRef, useCallback } from 'react';
 
 import { useOutsideAlerter } from '@utils/dropDown';
+import classNames from 'classnames';
 
-const DropDown = ({ content, defaultValue, mainKey, contents }) => {
+const DropDown = ({
+  content,
+  defaultValue,
+  mainKey,
+  contents,
+  label,
+  className,
+}) => {
   const [toggle, setToggle] = useState(false);
   const [selectedItem, setSelectedItem] = useState(defaultValue);
 
@@ -21,10 +29,15 @@ const DropDown = ({ content, defaultValue, mainKey, contents }) => {
     });
   };
 
+  const buttonClasses = classNames('btn btn-light dropdown-toggle', {
+    [className]: className,
+  });
+
   return (
     <div ref={wrapperRef} className="dropdown">
+      {label ? <span className="text-muted">{label} </span> : ''}
       <button
-        className="btn btn-light dropdown-toggle"
+        className={buttonClasses}
         type="button"
         onClick={() => setToggle((toggle) => !toggle)}
       >
