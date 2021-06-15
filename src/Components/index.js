@@ -5,3 +5,6 @@ export { default as TopNav } from './Menu/TopNav';
 
 // Buttons
 export { default as DropDown } from './Buttons/DropDown';
+
+// Utils components
+export { default as Icon } from './Icon';

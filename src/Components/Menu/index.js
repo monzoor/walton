@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
 import { PATHS } from '@constants';
 
+import { Icon } from '@components';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 const Menu = () => {
   return (
     <>
+      <Icon icon={faCoffee} />
       <ul>
         <li>
           <Link to={PATHS.HOME}>Home</Link>
