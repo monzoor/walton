@@ -51,5 +51,54 @@
         "sabCategory": []
       }
     ]
+  },
+  {
+    "id": 3,
+    "parentId": 0,
+    "name": "Furniture & Decor",
+    "slug": "furniture-decor",
+    "sabCategory": []
+  },
+  {
+    "id": 4,
+    "parentId": 0,
+    "name": "Turbo System",
+    "slug": "turbo-system",
+    "sabCategory": []
+  },
+  {
+    "id": 5,
+    "parentId": 0,
+    "name": "Lighting",
+    "slug": "lighting",
+    "sabCategory": []
+  },
+  {
+    "id": 6,
+    "parentId": 0,
+    "name": "Accessories",
+    "slug": "accessories",
+    "sabCategory": []
+  },
+  {
+    "id": 7,
+    "parentId": 0,
+    "name": "Body Parts",
+    "slug": "body-parts",
+    "sabCategory": []
+  },
+  {
+    "id": 8,
+    "parentId": 0,
+    "name": "Performance Filters",
+    "slug": "performance-filters",
+    "sabCategory": []
+  },
+  {
+    "id": 9,
+    "parentId": 0,
+    "name": "Engine Parts",
+    "slug": "engine-parts",
+    "sabCategory": []
   }
 ]

@@ -1,9 +1,15 @@
-import { PublicLayout } from '@components';
+import { PublicLayout, Categories } from '@components';
 
 const Home = () => {
   return (
     <PublicLayout>
-      <h1>this is home.</h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-3 pe-0">
+            <Categories show regular />
+          </div>
+        </div>
+      </div>
     </PublicLayout>
   );
 };

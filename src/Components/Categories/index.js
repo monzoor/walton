@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import categories from 'data/categories.json';
+import classNames from 'classnames';
 
-const Categories = ({ show }) => {
+const Categories = ({ show, regular }) => {
   const categoriesCreator = (items) => {
     return (
       <ul>
@@ -23,11 +24,10 @@ const Categories = ({ show }) => {
       </ul>
     );
   };
-  return (
-    <div className={`navigation ${show ? 'd-block' : 'd-none'}`}>
-      {categoriesCreator(categories)}
-    </div>
-  );
+  const className = classNames(`navigation ${show ? 'd-block' : 'd-none'}`, {
+    regular: regular,
+  });
+  return <div className={className}>{categoriesCreator(categories)}</div>;
 };
 
 export default Categories;
