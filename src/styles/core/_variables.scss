@@ -21,7 +21,7 @@ $gray-100: #f4f4f4; // top header, search bar
 
 // base
 $body-color: #252525;
-$border-radius:               0 !default;
+$border-radius: 0 !default;
 
 // typography
 $font-family-sans-serif: 'Rubik', sans-serif;
@@ -31,4 +31,7 @@ $input-btn-focus-width: 0 !default;
 
 // navbar
 $navbar-light-color: $gray-100 !default;
+$navbar-light-active-color: $primary;
+$navbar-nav-link-padding-x: 1.3rem !default;
 
+$navbar-light-hover-color: $primary;

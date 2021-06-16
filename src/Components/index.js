@@ -3,6 +3,7 @@ export { default as PublicLayout } from '../Layouts/Public';
 export { default as Menu } from './Menu';
 export { default as TopNav } from './Menu/TopNav';
 export { default as Header } from './Menu/Header';
+export { default as SecondaryMenu } from './Menu/SecondaryMenu';
 
 // Buttons
 export { default as DropDown } from './Buttons/DropDown';
