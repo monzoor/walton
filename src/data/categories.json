@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "parentId": 0,
+    "name": "Brake Parts",
+    "slug": "break-parts",
+    "sabCategory": [
+      {
+        "id": 11,
+        "parentId": 1,
+        "name": "Cars",
+        "slug": "cars",
+        "sabCategory": [
+          {
+            "id": 111,
+            "parentId": 11,
+            "name": "Yellow",
+            "slug": "yellow",
+            "sabCategory": []
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "parentId": 1,
+        "name": "Truck",
+        "slug": "truck",
+        "sabCategory": [
+          {
+            "id": 121,
+            "parentId": 12,
+            "name": "Red",
+            "slug": "red",
+            "sabCategory": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "parentId": 0,
+    "name": "Wheels & Tires",
+    "slug": "wheel-tires",
+    "sabCategory": [
+      {
+        "id": 21,
+        "parentId": 2,
+        "name": "Cars",
+        "slug": "cars",
+        "sabCategory": []
+      }
+    ]
+  }
+]

@@ -1,14 +1,14 @@
-$primary: #FEDC19;
+$primary: #fedc19;
 
 $secondary: #444444;
 
-$dark: #051D42;
+$dark: #051d42;
 
-$orange: #E23E1C;
+$orange: #e23e1c;
 
-$green: #2E9909;
+$green: #2e9909;
 
-$gray-100: #F4F4F4; // top header, search bar
+$gray-100: #f4f4f4; // top header, search bar
 
 // #FAFAFA // top side nav, top banner
 
@@ -17,18 +17,18 @@ $gray-100: #F4F4F4; // top header, search bar
 
 // #F8F8F8 // product bg, full width banner bg
 
-
-
 // #545454
 
-// base 
+// base
 $body-color: #252525;
+$border-radius:               0 !default;
 
 // typography
 $font-family-sans-serif: 'Rubik', sans-serif;
 
 // buttons
-$input-btn-focus-width:         0 !default;
+$input-btn-focus-width: 0 !default;
 
-// navbar 
+// navbar
 $navbar-light-color: $gray-100 !default;
+

@@ -2,4 +2,8 @@
 @import '~bootstrap/scss/bootstrap';
 
 // utils
-@import './utils/misc'
+@import './utils/misc';
+
+// component
+@import './components/dropdownCategories';
+@import './components/header';

@@ -1,6 +1,6 @@
 import Routes from '../../Routes';
 
-import { TopNav } from '@components';
+import { TopNav, Header } from '@components';
 import LanguageSelection from './LanguageSelection';
 import CurrencySelection from './CurrencySelection';
 
@@ -21,6 +21,7 @@ const BaseLayout = ({ children }) => {
           <span className="fw-bold">+1888 234 5678 </span>
         </div>
       </TopNav>
+      <Header />
       <Routes />
     </>
   );
