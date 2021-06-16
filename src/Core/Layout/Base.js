@@ -3,8 +3,10 @@ import Routes from '../../Routes';
 import { TopNav, Header } from '@components';
 import LanguageSelection from './LanguageSelection';
 import CurrencySelection from './CurrencySelection';
+import Cart from './Cart';
+import SearchBar from './SearchBar';
 
-const BaseLayout = ({ children }) => {
+const BaseLayout = () => {
   return (
     <>
       <TopNav>
@@ -21,7 +23,10 @@ const BaseLayout = ({ children }) => {
           <span className="fw-bold">+1888 234 5678 </span>
         </div>
       </TopNav>
-      <Header />
+      <Header>
+        <SearchBar />
+        <Cart />
+      </Header>
       <Routes />
     </>
   );
