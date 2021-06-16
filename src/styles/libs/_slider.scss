@@ -1,0 +1,19 @@
+.top-slider {
+  .slick-dots {
+    width: auto;
+    left: 120px;
+    bottom: 40px;
+    li {
+      button:before {
+        border-radius: 100%;
+        color: transparent;
+        background-color: rgba(#000, 0.75);
+      }
+    }
+    li.slick-active button:before {
+      border: 1px solid $orange;
+      color: transparent;
+      background-color: transparent;
+    }
+  }
+}

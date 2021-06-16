@@ -1,5 +1,19 @@
 .text {
-	&-small {
-		font-size: 11px;
-	}
+  // Size
+  &-small {
+    font-size: 11px;
+  }
+  // color
+  &-orange {
+    color: $orange;
+  }
+
+  // misc
+  &-spacing-5 {
+    letter-spacing: 5px;
+  }
+
+  &-lh-1 {
+	  line-height: 1.2;
+  }
 }

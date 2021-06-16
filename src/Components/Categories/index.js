@@ -24,9 +24,12 @@ const Categories = ({ show, regular }) => {
       </ul>
     );
   };
-  const className = classNames(`navigation ${show ? 'd-block' : 'd-none'}`, {
-    regular: regular,
-  });
+  const className = classNames(
+    `navigation border ${show ? 'd-block' : 'd-none'}`,
+    {
+      regular: regular,
+    },
+  );
   return <div className={className}>{categoriesCreator(categories)}</div>;
 };
 

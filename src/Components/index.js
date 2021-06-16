@@ -14,3 +14,6 @@ export { default as Icon } from './Icon';
 // Misc
 export { default as Logo } from './Misc/Logo';
 export { default as Categories } from './Categories';
+
+// Product
+export { default as ProductCard } from './Product/ProductCard';

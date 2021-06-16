@@ -81,21 +81,21 @@ const SecondaryMenu = () => {
                 <i className="fa fa-map-marker-alt nav-link fs-5 pointer"></i>
               </li>
               <li className="nav-item">
-                <i class="fa fa-sync nav-link fs-5 pointer"></i>
+                <i className="fa fa-sync nav-link fs-5 pointer"></i>
               </li>
               <li className="nav-item">
                 <button
                   type="button"
                   className="btn btn-transparent position-relative nav-link"
                 >
-                  <i class="far fa-heart fs-5"></i>
+                  <i className="far fa-heart fs-5"></i>
                   <span className="badge bg-primary position-absolute rounded-circle px-2 py-1">
                     <span className="text-small">4</span>
                   </span>
                 </button>
               </li>
               <li className="nav-item">
-                <i class="far fa-user nav-link fs-5 pointer"></i>
+                <i className="far fa-user nav-link fs-5 pointer"></i>
               </li>
             </ul>
           </div>

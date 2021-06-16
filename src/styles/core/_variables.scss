@@ -9,6 +9,7 @@ $orange: #e23e1c;
 $green: #2e9909;
 
 $gray-100: #f4f4f4; // top header, search bar
+$custom-gray-300: #F9FAFC; // top header, search bar
 
 // #FAFAFA // top side nav, top banner
 
@@ -28,6 +29,13 @@ $font-family-sans-serif: 'Rubik', sans-serif;
 
 // buttons
 $input-btn-focus-width: 0 !default;
+$btn-padding-y: 20px;
+$btn-padding-x: 40px;
+
+$btn-padding-y-lg: $btn-padding-y !default;
+$btn-padding-x-lg: $btn-padding-x !default;
+$btn-font-size: 16px;
+$btn-font-size-lg: $btn-font-size;
 
 // navbar
 $navbar-light-color: $gray-100 !default;
