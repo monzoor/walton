@@ -1,0 +1,6 @@
+.bg {
+	&-primary-dark {
+		background: $primary;
+		background: linear-gradient(90deg, $primary 50%, $dark 50%);
+	}
+}
