@@ -17,3 +17,6 @@ export { default as Categories } from './Categories';
 
 // Product
 export { default as ProductCard } from './Product/ProductCard';
+
+// section
+export { default as SectionHeader } from './Sections/SectionHeader';

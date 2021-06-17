@@ -1,7 +1,8 @@
 import { PublicLayout, Categories } from '@components';
-import FeatureBanner from './FeatureBanner';
 
+import FeatureBanner from './FeatureBanner';
 import FeatureSlider from './FeatureSlider';
+import RecentlyViewed from './RecentlyViewed';
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
         </div>
         <div className="row">
           <div className="col-12">
-            <FeatureBanner />
+            <RecentlyViewed />
           </div>
         </div>
       </div>

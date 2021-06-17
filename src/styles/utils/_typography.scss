@@ -17,3 +17,11 @@
 	  line-height: 1.2;
   }
 }
+// link
+.link {
+	&-dark {
+		&:hover {
+			color: $primary;
+		}
+	}
+}

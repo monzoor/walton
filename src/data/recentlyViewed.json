@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "slug": "electronics",
+    "category": null,
+    "title": "Electronics",
+    "description": null,
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/recently/1.jpg",
+    "links": [
+      {
+        "id": 1,
+        "slug": "computers",
+        "name": "Computers"
+      },
+      {
+        "id": 2,
+        "slug": "laptop",
+        "name": "Laptop"
+      },
+      {
+        "id": 3,
+        "slug": "macbook",
+        "name": "Macbook"
+      },
+      {
+        "id": 4,
+        "slug": "accessories",
+        "name": "Accessories"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "tablets-mobiles",
+    "category": null,
+    "title": "Tablets & Mobiles",
+    "description": null,
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/recently/2.jpg",
+    "links": [
+      {
+        "id": 1,
+        "slug": "computers",
+        "name": "Computers"
+      },
+      {
+        "id": 2,
+        "slug": "laptop",
+        "name": "Laptop"
+      },
+      {
+        "id": 3,
+        "slug": "macbook",
+        "name": "Macbook"
+      },
+      {
+        "id": 4,
+        "slug": "accessories",
+        "name": "Accessories"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "tv-audio",
+    "category": null,
+    "title": "TV & Audio",
+    "description": null,
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/recently/3.jpg",
+    "links": [
+      {
+        "id": 1,
+        "slug": "computers",
+        "name": "Computers"
+      },
+      {
+        "id": 2,
+        "slug": "laptop",
+        "name": "Laptop"
+      },
+      {
+        "id": 3,
+        "slug": "macbook",
+        "name": "Macbook"
+      },
+      {
+        "id": 4,
+        "slug": "accessories",
+        "name": "Accessories"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "pc-laptop",
+    "category": null,
+    "title": "Pc & Laptop",
+    "description": null,
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/recently/4.jpg",
+    "links": [
+      {
+        "id": 1,
+        "slug": "computers",
+        "name": "Computers"
+      },
+      {
+        "id": 2,
+        "slug": "laptop",
+        "name": "Laptop"
+      },
+      {
+        "id": 3,
+        "slug": "macbook",
+        "name": "Macbook"
+      },
+      {
+        "id": 4,
+        "slug": "accessories",
+        "name": "Accessories"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "accessories",
+    "category": null,
+    "title": "Accessories",
+    "description": null,
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/recently/5.jpg",
+    "links": [
+      {
+        "id": 1,
+        "slug": "computers",
+        "name": "Computers"
+      },
+      {
+        "id": 2,
+        "slug": "laptop",
+        "name": "Laptop"
+      },
+      {
+        "id": 3,
+        "slug": "macbook",
+        "name": "Macbook"
+      },
+      {
+        "id": 4,
+        "slug": "accessories",
+        "name": "Accessories"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "games-consoles",
+    "category": null,
+    "title": "Games & Consoles",
+    "description": null,
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/recently/6.jpg",
+    "links": [
+      {
+        "id": 1,
+        "slug": "computers",
+        "name": "Computers"
+      },
+      {
+        "id": 2,
+        "slug": "laptop",
+        "name": "Laptop"
+      },
+      {
+        "id": 3,
+        "slug": "macbook",
+        "name": "Macbook"
+      },
+      {
+        "id": 4,
+        "slug": "accessories",
+        "name": "Accessories"
+      }
+    ]
+  }
+]

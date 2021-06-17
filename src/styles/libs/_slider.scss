@@ -17,3 +17,24 @@
     }
   }
 }
+
+.product-slider {
+  .slick-prev,
+  .slick-next {
+    top: -72px;
+    right: 0;
+	&:hover {
+		background: $primary;
+	}
+    &:before {
+      color: $dark;
+      content: '';
+    }
+    i {
+      margin-top: -7px;
+    }
+  }
+  .slick-prev {
+    left: calc(100% - 75px);
+  }
+}
