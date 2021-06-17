@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "slug": "iphone-max-pro",
+    "category": null,
+    "title": "Protective sleeves",
+    "description": "It is a long established fact that a reader will be distracted",
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/midBanner/11.jpeg"
+  },
+  {
+    "id": 2,
+    "slug": "just-slug-1",
+    "category": null,
+    "title": "Nutrlllet Blender <span>Combo.</span>",
+    "description": "It is a long established fact that a reader will...",
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/midBanner/1.jpg"
+  }
+]

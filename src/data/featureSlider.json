@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "slug": "iphone-max-pro",
+    "category": "clothing",
+    "title": "up to 20% off speakers",
+    "description": "the best gadget collection 2021",
+    "price": "$430.00",
+    "sell_price": "$350.00",
+    "image": "./assets/images/products/slider/1.jpg"
+  },
+  {
+    "id": 2,
+    "slug": "just-slug",
+    "category": "mobile",
+    "title": "up to 5% off laptop",
+    "description": "the best gadget collection 2021",
+    "price": "$430.00",
+    "sell_price": "$350.00",
+    "image": "./assets/images/products/slider/1.jpg"
+  }
+]

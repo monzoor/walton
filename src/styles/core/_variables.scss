@@ -8,8 +8,11 @@ $orange: #e23e1c;
 
 $green: #2e9909;
 
-$gray-100: #f4f4f4; // top header, search bar
-$custom-gray-300: #F9FAFC; // top header, search bar
+$gray-100: #f4f4f4; 
+$custom-gray-300: #F9FAFC; 
+$custom-gray-banner-1: #F3F3F3; 
+$custom-gray-banner-2: #E9E9E9; 
+
 
 // #FAFAFA // top side nav, top banner
 
@@ -29,11 +32,11 @@ $font-family-sans-serif: 'Rubik', sans-serif;
 
 // buttons
 $input-btn-focus-width: 0 !default;
-$btn-padding-y: 20px;
-$btn-padding-x: 40px;
+// $btn-padding-y: 20px;
+$btn-padding-x: 30px;
 
-$btn-padding-y-lg: $btn-padding-y !default;
-$btn-padding-x-lg: $btn-padding-x !default;
+$btn-padding-y-lg: 20px !default;
+$btn-padding-x-lg: 40px !default;
 $btn-font-size: 16px;
 $btn-font-size-lg: $btn-font-size;
 
