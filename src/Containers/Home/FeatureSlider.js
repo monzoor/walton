@@ -7,7 +7,6 @@ const FeatureSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -17,7 +16,7 @@ const FeatureSlider = () => {
   return (
     <div className="col-12 p-0 top-slider">
       <Slider {...settings}>
-        {featureData.map((item) => (
+        {featureData.map((item, index) => (
           <ProductCard key={item.id} content={item} topSlider />
         ))}
       </Slider>

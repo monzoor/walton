@@ -17,22 +17,34 @@ const SecondaryMenu = () => {
               </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle pointer">SHOP</a>
+              <span className="nav-link dropdown-toggle pointer">SHOP</span>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink
+                    activeClassName="active"
+                    className="dropdown-item"
+                    to={PATHS.HOME}
+                  >
                     Action
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink
+                    activeClassName="active"
+                    className="dropdown-item"
+                    to={PATHS.HOME}
+                  >
                     Another action
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink
+                    activeClassName="active"
+                    className="dropdown-item"
+                    to={PATHS.HOME}
+                  >
                     Something else here
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -46,22 +58,16 @@ const SecondaryMenu = () => {
               </NavLink>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle pointer">PAGES</a>
+              <span className="nav-link dropdown-toggle pointer">PAGES</span>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink
+                    activeClassName="active"
+                    className="dropdown-item"
+                    to={PATHS.HOME}
+                  >
                     Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Something else here
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>

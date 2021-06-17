@@ -14,36 +14,36 @@ const ProductCard = ({
     content;
 
   const rowClasses = classNames('row', {
-    ['align-items-end bg-gray-300 border border-start-0']: topSlider,
-    ['p-5 align-items-center']: midBanner,
+    'align-items-end bg-gray-300 border border-start-0': topSlider,
+    'p-5 align-items-center': midBanner,
     [className]: !!className,
   });
 
   const contentWrapperClasses = classNames('', {
-    ['col-6 px-5 py-5']: topSlider,
-    ['col-7']: midBanner,
+    'col-6 px-5 py-5': topSlider,
+    'col-7': midBanner,
   });
 
   const imageWrapperClasses = classNames('', {
-    ['col-6 pe-0']: topSlider,
-    ['col-5']: midBanner,
+    'col-6 pe-0': topSlider,
+    'col-5': midBanner,
   });
 
-  const wrapperClasses = classNames({ ['mx-4']: topSlider });
+  const wrapperClasses = classNames({ 'mx-4': topSlider });
 
   const titleClasses = classNames('product-title', {
-    ['fs-1 text-uppercase text-lh-1']: topSlider,
-    ['fs-3 text-lh-1']: midBanner,
+    'fs-1 text-uppercase text-lh-1': topSlider,
+    'fs-3 text-lh-1': midBanner,
   });
 
   const descriptionClasses = classNames('text-muted', {
-    ['text-capitalize']: topSlider,
+    'text-capitalize': topSlider,
   });
 
   const buttonClasses = classNames(
     'btn btn-primary text-uppercase text-white',
     {
-      ['mb-5 btn-lg']: topSlider,
+      'mb-5 btn-lg': topSlider,
     },
   );
 
