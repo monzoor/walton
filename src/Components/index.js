@@ -17,6 +17,8 @@ export { default as Categories } from './Categories';
 
 // Product
 export { default as ProductCard } from './Product/ProductCard';
+export { default as SpecialOffer } from './Product/SpecialOffer';
+export { default as CountdownTimer } from './CountDown/CountDownTimer';
 
 // section
 export { default as SectionHeader } from './Sections/SectionHeader';

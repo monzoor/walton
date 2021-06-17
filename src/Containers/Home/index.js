@@ -3,6 +3,7 @@ import { PublicLayout, Categories } from '@components';
 import FeatureBanner from './FeatureBanner';
 import FeatureSlider from './FeatureSlider';
 import RecentlyViewed from './RecentlyViewed';
+import NewArrivals from './NewArrivals';
 
 const Home = () => {
   return (
@@ -23,9 +24,14 @@ const Home = () => {
             <FeatureBanner />
           </div>
         </div>
-        <div className="row">
+        <div className="row mb-5">
           <div className="col-12">
             <RecentlyViewed />
+          </div>
+        </div>
+        <div className="row mb-5">
+          <div className="col-12">
+            <NewArrivals />
           </div>
         </div>
       </div>

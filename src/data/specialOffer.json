@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "slug": "iphone-max-pro",
+  "category": "clothing",
+  "title": "VR - VASE",
+  "description": "the best gadget collection 2021",
+  "price": "$430.00",
+  "sell_price": "$350.00",
+  "image": "./assets/images/products/specialOffer/1.jpeg",
+  "soldItemCount": 15,
+  "stock": 39,
+  "sellPercent": 20
+}

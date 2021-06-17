@@ -45,8 +45,8 @@ const SliderItems = () => {
         <div>
           <div className="row abc">
             {recentlyViewed.map((item) => (
-              <div className="col-4 mb-4">
-                <ProductCard key={item.id} recently content={item} />
+              <div key={item.id} className="col-4 mb-4">
+                <ProductCard recently content={item} />
               </div>
             ))}
           </div>
@@ -54,8 +54,8 @@ const SliderItems = () => {
         <div>
           <div className="row abc">
             {recentlyViewed.map((item) => (
-              <div className="col-4 mb-4">
-                <ProductCard key={item.id} recently content={item} />
+              <div key={item.id} className="col-4 mb-4">
+                <ProductCard recently content={item} />
               </div>
             ))}
           </div>
@@ -70,6 +70,7 @@ const RecentlyViewed = () => {
       <SectionHeader
         title="RECENTLY VIEWED PRODUCTS"
         icon="fas fa-trophy me-2"
+        border="border-bottom"
       />
       <SliderItems />
     </>
