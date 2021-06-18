@@ -1,10 +1,11 @@
-import { Menu } from '@components';
+import { Menu, NewsLetter } from '@components';
 
 const PublicLayout = ({ children }) => {
   return (
     <>
       <Menu />
       {children}
+      <NewsLetter />
     </>
   );
 };
