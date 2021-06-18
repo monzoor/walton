@@ -10,8 +10,8 @@
 .note {
   display: inline-block;
   position: absolute;
-  right: 0;
-  top: -1px;
+  right: 14px;
+  top: 9px;
   &:after {
     content: '';
     position: absolute;
@@ -61,8 +61,8 @@
     .button-box {
       display: block !important;
     }
-	.product-title {
-		color: $primary;
-	}
+    .product-title {
+      color: $primary;
+    }
   }
 }

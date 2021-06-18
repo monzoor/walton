@@ -12,6 +12,7 @@ const ProductCard = ({
   midBanner = false,
   recently = false,
   list = false,
+  slider = false,
   className,
 }) => {
   const {
@@ -33,6 +34,7 @@ const ProductCard = ({
     'p-5 align-items-center': midBanner,
     'border p-3 mx-0 align-items-center ': recently,
     'border border-end-0 mb-3 position-relative hover': list,
+    'mx-0': slider,
     [className]: !!className,
   });
 

@@ -9,10 +9,10 @@ const CartButton = ({ slug, buttonClasses, cart = false }) => {
       {cart ? (
         <div className="button-box">
           <button className="btn btn-outline-light ms-2 px-2 text-muted border">
-            <i class="fas fa-compress-alt" />
+            <i className="fas fa-compress-alt" />
           </button>
           <button className="btn btn-outline-light ms-2 px-2 text-muted border">
-            <i class="fas fa-heart" />
+            <i className="fas fa-heart" />
           </button>
         </div>
       ) : (

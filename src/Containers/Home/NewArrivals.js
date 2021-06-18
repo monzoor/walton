@@ -1,4 +1,4 @@
-import { ProductCard, SectionHeader, SpecialOffer } from '@components';
+import { SectionHeader, SpecialOffer, SliderItems } from '@components';
 import specialOffer from 'data/specialOffer.json';
 import productList from 'data/productList.json';
 
@@ -15,11 +15,13 @@ const NewArrivals = () => {
         </div>
         <div className="col-7">
           <div className="row">
-            {productList.map((product) => (
-              <div key={product.id} className="col-4">
-                <ProductCard content={product} list />
-              </div>
-            ))}
+            <SliderItems
+              rowClassNames="px-0"
+              productWrapperClasses="px-0"
+              content={productList}
+              viewType={{ list: true }}
+              arrowClasses="list"
+            />
           </div>
         </div>
       </div>

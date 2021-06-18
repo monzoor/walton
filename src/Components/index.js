@@ -20,6 +20,6 @@ export { default as Categories } from './Categories';
 export { default as ProductCard } from './Product/ProductCard';
 export { default as SpecialOffer } from './Product/SpecialOffer';
 export { default as CountdownTimer } from './CountDown/CountDownTimer';
-
+export { default as SliderItems } from './Slider/SliderItem';
 // section
 export { default as SectionHeader } from './Sections/SectionHeader';
