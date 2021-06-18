@@ -7,6 +7,7 @@ import NewArrivals from './NewArrivals';
 import Banner from './Banner';
 import ProductLists from './ProductLists';
 import LatestProduct from './LatestProduct';
+import LatestBlog from './LatestBlog';
 
 const Home = () => {
   return (
@@ -40,13 +41,14 @@ const Home = () => {
         <div className="row mb-5">
           <div className="col-3">
             <div className="row mx-0">
-              <LatestProduct />
+              <div className="col-12">
+                <LatestProduct />
+              </div>
             </div>
-            <div className="row mx-0">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Necessitatibus commodi cupiditate nobis nostrum nam, error
-              molestias magnam aspernatur animi deleniti omnis ea voluptas iste
-              sequi fuga delectus veniam excepturi sed.
+            <div className="row">
+              <div className="col-12">
+                <LatestBlog />
+              </div>
             </div>
           </div>
           <div className="col-9">
