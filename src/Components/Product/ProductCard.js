@@ -13,7 +13,9 @@ const ProductCard = ({
   recently = false,
   list = false,
   slider = false,
+  longBanner = false,
   className,
+  noButton = false,
 }) => {
   const {
     slug,
@@ -27,6 +29,7 @@ const ProductCard = ({
     rating,
     onSale,
     newProduct,
+    offerTag,
   } = content;
 
   const rowClasses = classNames('row', {
@@ -43,6 +46,7 @@ const ProductCard = ({
     'col-7': midBanner,
     'col-7 order-2': recently,
     'col-12 order-2': list,
+    'col-6 p-5': longBanner,
   });
 
   const imageWrapperClasses = classNames('', {
@@ -50,6 +54,7 @@ const ProductCard = ({
     'col-5': midBanner,
     'col-5 order-1': recently,
     'col-12 order-1 pt-2 mb-3': list,
+    'col-6 pe-0 tt': longBanner,
   });
 
   const wrapperClasses = classNames({ 'mx-4': topSlider, 'mb-2': list });
@@ -59,6 +64,7 @@ const ProductCard = ({
     'fs-3 text-lh-1': midBanner,
     'fs-5 fw-bold mb-0': recently,
     'mb-0': list,
+    'fs-3': longBanner,
   });
 
   const descriptionClasses = classNames('text-muted', {
@@ -107,12 +113,21 @@ const ProductCard = ({
               {category}
             </p>
           )}
+          {offerTag && (
+            <p
+              dangerouslySetInnerHTML={createHTMLMarkup(offerTag)}
+              className="text-muted"
+            />
+          )}
 
           <p
             dangerouslySetInnerHTML={createHTMLMarkup(title)}
             className={titleClasses}
           />
-          <p className={descriptionClasses}>{description}</p>
+          <p
+            dangerouslySetInnerHTML={createHTMLMarkup(description)}
+            className={descriptionClasses}
+          />
 
           {list ? <span className="d-block mb-0">{ratingItems}</span> : ''}
 
@@ -129,6 +144,7 @@ const ProductCard = ({
             <CartButton
               slug={`/details/${slug}`}
               buttonClasses={buttonClasses}
+              noButton={noButton}
               cart={list}
             />
           ) : (

@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "slug": "iphone-max-pro",
+    "category": null,
+	"offerTag": "Sale offer <span class='text-orange'>- 20%</span> Off This Week",
+    "title": "Accessories <br /> Naturally Colorful 2021",
+    "description": "Starting at <span class='fs-4 text-primary fw-bold'>$1025.00</span>",
+    "price": null,
+    "sell_price": null,
+    "image": "./assets/images/products/longBanner/1.jpg"
+  }
+]

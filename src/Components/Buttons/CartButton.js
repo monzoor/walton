@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const CartButton = ({ slug, buttonClasses, cart = false }) => {
+const CartButton = ({ noButton, slug, buttonClasses, cart = false }) => {
+  if (noButton) return <></>;
   return (
     <div className="d-flex">
       <Link to={`/details/${slug}`} className={buttonClasses}>
-        {cart ? 'ADD TO CART ' : 'start buying'}
+        {cart ? 'ADD TO CART ' : 'START BUYING'}
       </Link>
       {cart ? (
         <div className="button-box">
