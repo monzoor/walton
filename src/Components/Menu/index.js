@@ -8,7 +8,7 @@ const Menu = () => {
           <div className="col-3 bg-primary text-white py-2">
             <div className="row mt-2 pt-1">
               <div className="col-auto py-2 pe-5">
-                <i className="fas fa-bars"></i>
+                <i className="me-3 fas fa-bars"></i>
                 Browse categories
               </div>
             </div>
