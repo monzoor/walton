@@ -1,4 +1,4 @@
-import { Icon, Categories } from '@components';
+import { Categories } from '@components';
 import { useState } from 'react';
 import { useOutsideAlerter } from '@utils/dropDown';
 import { useRef } from 'react';
@@ -26,7 +26,7 @@ const SearchBar = () => {
               className="pointer mt-3 ms-4 pt-1"
             >
               <span className="fw-bold">All Categories</span>
-              <Icon className="ms-2 pt-1 me-5" icon={['fas', 'chevron-down']} />
+              <i className="fas fa-chevron-down ms-2 pt-1 me-5 fs-6"></i>
             </div>
             <Categories show={viewCategories} />
           </div>
