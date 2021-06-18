@@ -7,6 +7,7 @@ export { default as SecondaryMenu } from './Menu/SecondaryMenu';
 
 // Buttons
 export { default as DropDown } from './Buttons/DropDown';
+export { default as CartButton } from './Buttons/CartButton';
 
 // Utils components
 export { default as Icon } from './Icon';

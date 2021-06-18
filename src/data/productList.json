@@ -9,8 +9,8 @@
     "price": "$430.00",
     "sell_price": "$350.00",
     "image": "./assets/images/products/productList/1.jpg",
-    "onSale": true,
-    "newProduct": false
+    "onSale": false,
+    "newProduct": true
   },
   {
     "id": 2,
@@ -20,9 +20,9 @@
     "description": "the best gadget collection 2021",
     "rating": 0,
     "price": "$430.00",
-    "sell_price": "$350.00",
+    "sell_price": null,
     "image": "./assets/images/products/productList/1.jpg",
-    "onSale": true,
+    "onSale": false,
     "newProduct": false
   },
   {

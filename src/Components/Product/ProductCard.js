@@ -1,6 +1,8 @@
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
+import { CartButton } from '@components';
+
 const createHTMLMarkup = (value) => {
   return { __html: value };
 };
@@ -22,13 +24,15 @@ const ProductCard = ({
     image,
     links,
     rating,
+    onSale,
+    newProduct,
   } = content;
 
   const rowClasses = classNames('row', {
     'align-items-end bg-gray-300 border border-start-0': topSlider,
     'p-5 align-items-center': midBanner,
     'border p-3 mx-0 align-items-center ': recently,
-    'border border-end-0 mb-3': list,
+    'border border-end-0 mb-3 position-relative hover': list,
     [className]: !!className,
   });
 
@@ -46,13 +50,13 @@ const ProductCard = ({
     'col-12 order-1 pt-2 mb-3': list,
   });
 
-  const wrapperClasses = classNames({ 'mx-4': topSlider });
+  const wrapperClasses = classNames({ 'mx-4': topSlider, 'mb-2': list });
 
   const titleClasses = classNames('product-title', {
     'fs-1 text-uppercase text-lh-1': topSlider,
     'fs-3 text-lh-1': midBanner,
     'fs-5 fw-bold mb-0': recently,
-    'mb-2': list,
+    'mb-0': list,
   });
 
   const descriptionClasses = classNames('text-muted', {
@@ -71,17 +75,23 @@ const ProductCard = ({
 
   const buttonClasses = classNames('btn btn-primary  text-white', {
     'mb-5 btn-lg text-uppercase': topSlider,
-    'fs-6 mb-3 px-2': list,
+    'fs-6 mb-4 px-2': list,
   });
+
+  const sellRibbon = classNames('note', { sale: onSale, new: newProduct });
 
   const ratingItems = [];
 
   if (list) {
     for (let i = 1; i <= 5; i++) {
       if (i > rating) {
-        ratingItems.push(<i class="far text-small text-orange fa-star"></i>);
+        ratingItems.push(
+          <i key={i} className="far text-small text-orange fa-star"></i>,
+        );
       } else {
-        ratingItems.push(<i class="fas text-small text-orange fa-star"></i>);
+        ratingItems.push(
+          <i key={i} className="fas text-small text-orange fa-star"></i>,
+        );
       }
     }
   }
@@ -102,7 +112,8 @@ const ProductCard = ({
           />
           <p className={descriptionClasses}>{description}</p>
 
-          {list ? <span className="d-block mb-2">{ratingItems}</span> : ''}
+          {list ? <span className="d-block mb-0">{ratingItems}</span> : ''}
+
           {price && (
             <p>
               <span className={priceClasses}>{price}</span>
@@ -113,9 +124,11 @@ const ProductCard = ({
           )}
 
           {!links ? (
-            <Link to={`/details/${slug}`} className={buttonClasses}>
-              {list ? 'ADD TO CART ' : 'start buying'}
-            </Link>
+            <CartButton
+              slug={`/details/${slug}`}
+              buttonClasses={buttonClasses}
+              cart={list}
+            />
           ) : (
             <>
               {links.map((link) => (
@@ -138,7 +151,14 @@ const ProductCard = ({
         </div>
       </div>
       <div className={imageWrapperClasses}>
-        <img className="img-fluid test" src={image} alt={description} />
+        {onSale || newProduct ? <div className={sellRibbon} /> : ''}
+        {list ? (
+          <Link to={`/details/${slug}`}>
+            <img className="img-fluid test" src={image} alt={description} />
+          </Link>
+        ) : (
+          <img className="img-fluid test" src={image} alt={description} />
+        )}
       </div>
     </div>
   );

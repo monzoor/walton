@@ -6,3 +6,63 @@
     }
   }
 }
+
+.note {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    line-height: 48px;
+    border-left: 65px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-top: 65px solid transparent;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    right: 4px;
+    z-index: 1;
+    top: 13px;
+    color: white;
+    transform: rotate(45deg);
+  }
+  &.sale {
+    &:after {
+      border-top: 65px solid $primary;
+    }
+    &:before {
+      content: 'SALE';
+    }
+  }
+  &.new {
+    &:after {
+      border-top: 65px solid $orange;
+    }
+    &:before {
+      content: 'NEW';
+    }
+  }
+}
+
+.hover {
+  .button-box {
+    display: none;
+  }
+  &:hover {
+    border: 1px solid $primary !important;
+    .button-box {
+      display: block !important;
+    }
+	.product-title {
+		color: $primary;
+	}
+  }
+}
