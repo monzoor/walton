@@ -21,6 +21,7 @@ const NewArrivals = () => {
               content={productList}
               viewType={{ list: true }}
               arrowClasses="list"
+              showRating
             />
           </div>
         </div>

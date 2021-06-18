@@ -6,6 +6,7 @@ import RecentlyViewed from './RecentlyViewed';
 import NewArrivals from './NewArrivals';
 import Banner from './Banner';
 import ProductLists from './ProductLists';
+import LatestProduct from './LatestProduct';
 
 const Home = () => {
   return (
@@ -38,10 +39,15 @@ const Home = () => {
         </div>
         <div className="row mb-5">
           <div className="col-3">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            excepturi, architecto natus fugiat officia quo temporibus ipsa
-            delectus repellendus libero saepe eveniet nesciunt velit officiis
-            cupiditate, neque cumque doloremque ex!
+            <div className="row mx-0">
+              <LatestProduct />
+            </div>
+            <div className="row mx-0">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Necessitatibus commodi cupiditate nobis nostrum nam, error
+              molestias magnam aspernatur animi deleniti omnis ea voluptas iste
+              sequi fuga delectus veniam excepturi sed.
+            </div>
           </div>
           <div className="col-9">
             <div className="row mb-4">

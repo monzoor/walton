@@ -16,6 +16,11 @@ const ProductCard = ({
   longBanner = false,
   className,
   noButton = false,
+  noDescription = false,
+  short = false,
+  noSellPrice = false,
+  showRating = false,
+  titleLink = false,
 }) => {
   const {
     slug,
@@ -38,6 +43,7 @@ const ProductCard = ({
     'border p-3 mx-0 align-items-center ': recently,
     'border border-end-0 mb-3 position-relative hover': list,
     'mx-0': slider,
+    'p-2 border-bottom align-items-center py-4': short,
     [className]: !!className,
   });
 
@@ -46,7 +52,8 @@ const ProductCard = ({
     'col-7': midBanner,
     'col-7 order-2': recently,
     'col-12 order-2': list,
-    'col-6 p-5': longBanner,
+    'col-6 pt-5 px-5': longBanner,
+    'col-8 order-2': short,
   });
 
   const imageWrapperClasses = classNames('', {
@@ -55,6 +62,7 @@ const ProductCard = ({
     'col-5 order-1': recently,
     'col-12 order-1 pt-2 mb-3': list,
     'col-6 pe-0 tt': longBanner,
+    'col-4 px-0 order-1': short,
   });
 
   const wrapperClasses = classNames({ 'mx-4': topSlider, 'mb-2': list });
@@ -65,6 +73,7 @@ const ProductCard = ({
     'fs-5 fw-bold mb-0': recently,
     'mb-0': list,
     'fs-3': longBanner,
+    'text-decoration-none mb-2 d-block': short,
   });
 
   const descriptionClasses = classNames('text-muted', {
@@ -75,6 +84,7 @@ const ProductCard = ({
   const priceClasses = classNames('me-2 text-orange', {
     'fs-2': topSlider,
     'fs-5 fw-bold': list,
+    'mt-2 d-block': short,
   });
 
   const sellPriceClasses = classNames('text-decoration-line-through fw-bold', {
@@ -90,7 +100,7 @@ const ProductCard = ({
 
   const ratingItems = [];
 
-  if (list) {
+  if (showRating) {
     for (let i = 1; i <= 5; i++) {
       if (i > rating) {
         ratingItems.push(
@@ -120,21 +130,30 @@ const ProductCard = ({
             />
           )}
 
-          <p
-            dangerouslySetInnerHTML={createHTMLMarkup(title)}
-            className={titleClasses}
-          />
-          <p
-            dangerouslySetInnerHTML={createHTMLMarkup(description)}
-            className={descriptionClasses}
-          />
+          {!titleLink ? (
+            <p
+              dangerouslySetInnerHTML={createHTMLMarkup(title)}
+              className={titleClasses}
+            />
+          ) : (
+            <Link className={titleClasses} to={`/details/${slug}`}>
+              <span dangerouslySetInnerHTML={createHTMLMarkup(title)} />
+            </Link>
+          )}
 
-          {list ? <span className="d-block mb-0">{ratingItems}</span> : ''}
+          {!noDescription && (
+            <p
+              dangerouslySetInnerHTML={createHTMLMarkup(description)}
+              className={descriptionClasses}
+            />
+          )}
+
+          {showRating && <span className="d-block mb-0">{ratingItems}</span>}
 
           {price && (
             <p>
               <span className={priceClasses}>{price}</span>
-              {sell_price && (
+              {sell_price && !noSellPrice && (
                 <span className={sellPriceClasses}>{sell_price}</span>
               )}
             </p>

@@ -7,7 +7,7 @@ export const ProductLists = () => {
     <>
       {productList.map((product) => (
         <div key={product.id} className="col-3">
-          <ProductCard content={product} list />
+          <ProductCard content={product} showRating list />
         </div>
       ))}
     </>

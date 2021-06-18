@@ -10,8 +10,8 @@
 .note {
   display: inline-block;
   position: absolute;
-  right: 14px;
-  top: 9px;
+  right: 0px;
+  top: -1px;
   &:after {
     content: '';
     position: absolute;

@@ -9,6 +9,11 @@ const SliderItems = ({
   rowClassNames = '',
   productWrapperClasses = '',
   arrowClasses = '',
+  showRating = false,
+  noDescription = false,
+  noButton = false,
+  noSellPrice = false,
+  titleLink = false,
 }) => {
   const settings = {
     dots: false,
@@ -30,7 +35,16 @@ const SliderItems = ({
                 key={item.id}
                 className={classNames('col-4', productWrapperClasses)}
               >
-                <ProductCard {...viewType} slider content={item} />
+                <ProductCard
+                  {...viewType}
+                  slider
+                  showRating={showRating}
+                  content={item}
+                  noDescription={noDescription}
+                  noButton={noButton}
+                  noSellPrice={noSellPrice}
+                  titleLink={titleLink}
+                />
               </div>
             ))}
           </div>
@@ -42,7 +56,16 @@ const SliderItems = ({
                 key={item.id}
                 className={classNames('col-4', productWrapperClasses)}
               >
-                <ProductCard {...viewType} slider content={item} />
+                <ProductCard
+                  {...viewType}
+                  slider
+                  showRating={showRating}
+                  content={item}
+                  noDescription={noDescription}
+                  noButton={noButton}
+                  noSellPrice={noSellPrice}
+                  titleLink={titleLink}
+                />
               </div>
             ))}
           </div>

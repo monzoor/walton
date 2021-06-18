@@ -23,12 +23,17 @@
   .slick-next {
     top: -72px;
     right: 0;
-	&.list {
-		top: -20px;
-	}
-	&:hover {
-		background: $primary;
-	}
+    &.list {
+      top: -20px;
+    }
+    &.short {
+      top: -40px;
+      background: transparent !important;
+      border: 0;
+    }
+    &:hover {
+      background: $primary;
+    }
     &:before {
       color: $dark;
       content: '';
@@ -39,5 +44,8 @@
   }
   .slick-prev {
     left: calc(100% - 75px);
+    &.short {
+      left: calc(100% - 50px);
+    }
   }
 }
