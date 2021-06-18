@@ -9,6 +9,7 @@ import ProductLists from './ProductLists';
 import LatestProduct from './LatestProduct';
 import LatestBlog from './LatestBlog';
 
+import themeBanner from 'assets/images/banner.jpg';
 const Home = () => {
   return (
     <PublicLayout>
@@ -60,6 +61,11 @@ const Home = () => {
             <div className="row border-end">
               <ProductLists />
             </div>
+          </div>
+        </div>
+        <div className="row my-5">
+          <div className="col-12">
+            <img className="img-fluid" src={themeBanner} alt="" />
           </div>
         </div>
       </div>
