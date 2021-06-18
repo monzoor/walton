@@ -11,7 +11,10 @@
     "bootstrap": "^5.0.0-beta3",
     "classnames": "^2.3.1",
     "craco-alias": "^3.0.1",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "i18next": "^20.3.1",
+    "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.11.0",
@@ -27,9 +30,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco start",
+    "dev": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "start": "npm run build && node server.js"
   },
   "eslintConfig": {
     "extends": [
