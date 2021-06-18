@@ -1,6 +1,6 @@
 import Routes from '../../Routes';
 
-import { TopNav, Header } from '@components';
+import { TopNav, Header, Footer } from '@components';
 import LanguageSelection from './LanguageSelection';
 import CurrencySelection from './CurrencySelection';
 import Cart from './Cart';
@@ -28,6 +28,7 @@ const BaseLayout = () => {
         <Cart />
       </Header>
       <Routes />
+      <Footer />
     </>
   );
 };

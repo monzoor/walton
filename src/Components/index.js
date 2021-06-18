@@ -27,3 +27,4 @@ export { default as SectionHeader } from './Sections/SectionHeader';
 
 // footer
 export { default as NewsLetter } from './Footer/NewsLetter';
+export { default as Footer } from './Footer/Footer';

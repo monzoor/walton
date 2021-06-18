@@ -14,14 +14,21 @@
   }
 
   &-lh-1 {
-	  line-height: 1.2;
+    line-height: 1.2;
   }
 }
 // link
 .link {
-	&-dark {
-		&:hover {
-			color: $primary;
-		}
-	}
+  &-dark {
+    &:hover {
+      color: $primary;
+    }
+  }
+  &-muted {
+    @extend .text-muted;
+	text-decoration: none;
+    &:hover {
+      color: $primary !important;
+    }
+  }
 }
